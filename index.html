@@ -10,6 +10,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
   </head>
 
   <body>
@@ -54,5 +55,18 @@
     <script src="//unpkg.com/docsify-copy-code"></script>
     <!-- 图片缩放 -->
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        clientID: "47409e08620e5cf352c5",
+        clientSecret: "aaae3add516bbb3b822e9a7a0ce309565bbf87c6",
+        repo: "docsify-test",
+        owner: "Alegria",
+        admin: ["Alegria"],
+        // facebook-like distraction free mode
+        distractionFreeMode: false,
+      });
+    </script>
   </body>
 </html>
